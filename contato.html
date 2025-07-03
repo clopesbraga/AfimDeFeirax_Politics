@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Contato - AfimDeFeiraX</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f9f9f9;
+      padding: 20px;
+      max-width: 600px;
+      margin: auto;
+      color: #333;
+    }
+    h1 {
+      color: #005c99;
+    }
+    form {
+      display: flex;
+      flex-direction: column;
+    }
+    input, textarea {
+      margin-top: 10px;
+      padding: 10px;
+      font-size: 16px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+    }
+    button {
+      margin-top: 20px;
+      padding: 12px;
+      font-size: 16px;
+      background-color: #005c99;
+      color: white;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #003d66;
+    }
+  </style>
+</head>
+<body>
+  <h1>Fale Conosco</h1>
+  <p>Preencha o formulário abaixo para entrar em contato com a equipe do aplicativo <strong>AfimDeFeiraX</strong>.</p>
+
+  <!-- Substitua "SEU_EMAIL" no Formspree com seu e-mail real -->
+  <form action="https://formspree.io/f/SEU_ID_FORM" method="POST">
+    <label for="email">Seu e-mail:</label>
+    <input type="email" name="email" id="email" required>
+
+    <label for="mensagem">Mensagem:</label>
+    <textarea name="mensagem" id="mensagem" rows="6" required></textarea>
+
+    <button type="submit">Enviar</button>
+  </form>
+</body>
+</html>
